@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Open+Sans:ital@1&family=Poppins&family=Roboto:wght@700&family=Tiro+Devanagari+Marathi:ital@1&display=swap");
 
 :root {
-  --primary-color: #ffffff;
+  --primary-color: #fff;
   --secondary-color: #ff6b00;
   --background-color: #1c1a19;
 }
@@ -14,7 +14,7 @@
 
 body {
   color: var(--primary-color);
-  font-family: "Poppins", Sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -41,7 +41,7 @@ nav {
 }
 
 .logo {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -81,7 +81,7 @@ nav {
 }
 
 .headline h1 {
-  font-family: "Crete Round", Sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-weight: 700;
   color: var(--secondary-color);
   font-size: 56px;
@@ -90,7 +90,7 @@ nav {
 }
 
 .headline h3 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
