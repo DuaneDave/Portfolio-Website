@@ -21,6 +21,15 @@ html {
   scroll-behavior: smooth;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 .flex {
   display: flex;
 }
@@ -29,7 +38,7 @@ html {
   display: grid;
 }
 
-nav {
+.navbar {
   background-color: #3c3a39;
   padding: 1em 2em;
   display: flex;
