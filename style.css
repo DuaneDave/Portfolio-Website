@@ -167,7 +167,6 @@ header {
 .caption h2::after {
   content: "";
   width: 100%;
-  height: 0px;
   border: 1px solid #212121;
   position: absolute;
   bottom: 0;
@@ -195,7 +194,7 @@ header {
   overflow: hidden;
 }
 
-.card-details:hover .card-content {
+.card-details:hover .on-hover {
   transform: translateY(0);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.137), black);
   padding-inline: 1em;
@@ -223,8 +222,7 @@ header {
 
 .card-content p {
   margin-block: 12px;
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -322,8 +320,7 @@ header {
 }
 
 .skill-head h2 {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
