@@ -38,15 +38,21 @@ a {
   display: grid;
 }
 
-.navbar {
-  background-color: #3c3a39;
-  padding: 1em 2em;
+header {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
+  background-color: #3c3a39;
+  padding: 1em 2em;
   position: fixed;
   z-index: 100;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
