@@ -62,6 +62,9 @@ a {
   gap: 4px;
   align-items: center;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .line {
