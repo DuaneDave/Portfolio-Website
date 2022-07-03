@@ -67,10 +67,7 @@ header {
 
 .logo {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
 }
 
 .harmburger {
@@ -119,8 +116,6 @@ header {
 
 .headline h3 {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
 }
@@ -133,7 +128,6 @@ header {
 .lead {
   font-size: 16px;
   line-height: 24px;
-  width: 35ch;
 }
 
 .icons {
@@ -208,7 +202,6 @@ header {
 
 .card-content h3 {
   font-family: "Crete Round", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
@@ -247,7 +240,6 @@ header {
 .about-me-content h2 {
   margin: 120px 24px 24px 24px;
   font-family: "Crete Round", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
@@ -256,7 +248,6 @@ header {
 
 .about-me-content p {
   font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   color: #f4f5f7;
@@ -308,7 +299,6 @@ header {
   text-align: center;
   font-family: "Inter", sans-serif;
   margin-bottom: 2rem;
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
