@@ -227,7 +227,6 @@ header {
 
 .about-me {
   background-color: var(--background-color);
-  padding: 1em;
   position: relative;
 }
 
@@ -265,10 +264,10 @@ header {
 
 .illustration {
   position: absolute;
-  background-image: url('asset/bottomillus.png');
+  background-image: url("asset/bottomillus.png");
   background-repeat: no-repeat;
   background-size: contain;
-  right: -2.2rem;
+  right: 0;
   width: 250px;
   height: 380px;
   bottom: 70%;
