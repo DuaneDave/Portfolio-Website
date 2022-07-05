@@ -255,12 +255,6 @@ header {
   height: 148px;
 }
 
-form .special {
-  height: 48px;
-  width: 131px;
-  margin-bottom: 164px;
-}
-
 .about-me .special {
   width: 161px;
   height: 48px;
@@ -393,6 +387,15 @@ form textarea::placeholder {
   font-size: 1rem;
   color: #979493;
   font-family: inherit;
+}
+
+form button {
+  height: 48px;
+  width: 131px;
+}
+
+footer {
+  margin-top: 164px;
 }
 
 .footer {
