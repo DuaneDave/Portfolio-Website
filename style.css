@@ -398,7 +398,9 @@ form .special {
 
 .footer {
   background: url("asset/Bottom\ Naviagation.png");
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+  padding: 12px;
+  line-height: 24px;
   background-size: contain;
   background-position: 4.5rem 0;
   width: 100%;
