@@ -255,6 +255,12 @@ header {
   height: 148px;
 }
 
+form .special {
+  height: 48px;
+  width: 131px;
+  margin-bottom: 164px;
+}
+
 .about-me .special {
   width: 161px;
   height: 48px;
@@ -334,7 +340,6 @@ header {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   width: 327px;
-  font-size: 32px;
   line-height: 44px;
   font-size: 32px;
   text-align: center;
@@ -342,15 +347,15 @@ header {
   margin-bottom: 73px;
 }
 
+form {
+  width: 327px;
+  font-family: "Inter", sans-serif;
+}
+
 .contact form {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-}
-
-form {
-  width: 327px;
-  font-family: "Inter", sans-serif;
 }
 
 form input,
@@ -373,14 +378,14 @@ form input:invalid {
   border-bottom: 1px solid rgba(228, 75, 29, 0.596);
 }
 
-form input:focus,
-form textarea:focus {
-  border: 2px solid rgb(240, 95, 119);
-}
-
 form textarea {
   background-color: #fbf8f7;
   height: 114px;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 2px solid rgb(240, 95, 119);
 }
 
 form input::placeholder,
@@ -388,12 +393,6 @@ form textarea::placeholder {
   font-size: 1rem;
   color: #979493;
   font-family: inherit;
-}
-
-form .special {
-  height: 48px;
-  width: 131px;
-  margin-bottom: 164px;
 }
 
 .footer {
