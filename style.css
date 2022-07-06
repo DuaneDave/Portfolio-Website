@@ -444,6 +444,14 @@ header {
   margin-bottom: 50px;
 }
 
+.skill-head h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-block: 44px;
+}
+
 .about-me-content .about-info h2 {
   margin: 120px 0 24px 0;
   font-family: "Crete Round", sans-serif;
@@ -492,14 +500,6 @@ header {
 .skill-head {
   align-items: center;
   gap: 1rem;
-}
-
-.skill-head h2 {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  margin-block: 44px;
 }
 
 .info li {
@@ -621,7 +621,6 @@ form [name="Lname"] {
 form input {
   border-bottom: 1px solid #dbd8d7;
 }
-
 
 form textarea {
   background-color: #fbf8f7;
