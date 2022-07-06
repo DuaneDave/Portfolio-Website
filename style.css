@@ -110,7 +110,6 @@ header {
   display: none;
 }
 
-
 @media screen and (min-width: 764px) {
   header {
     padding-inline: 80px 100px;
@@ -146,7 +145,7 @@ header {
 }
 
 .i-image {
-  background: url('asset/Group.png');
+  background: url("asset/Group.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 450px;
@@ -265,7 +264,6 @@ header {
   }
 }
 
-
 /* === Work Section === */
 .caption {
   font-family: "Crete Round", sans-serif;
@@ -380,7 +378,7 @@ header {
     min-width: 327px;
     height: 83px;
   }
-  
+
   .caption h2::after {
     bottom: 65%;
     left: 100%;
@@ -422,7 +420,6 @@ header {
     margin-block: 0 24px;
   }
 }
-
 
 /* === About-me Section === */
 .about-me {
@@ -548,7 +545,7 @@ header {
     width: 450px;
     height: auto;
   }
-  
+
   .portfolio {
     flex-direction: row;
     justify-content: center;
@@ -573,7 +570,7 @@ header {
   padding-inline: 1em;
 }
 
-.contact p {
+.contact .parag {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   width: 327px;
@@ -583,7 +580,6 @@ header {
   color: var(--background-color);
   margin-bottom: 73px;
 }
-
 
 .contact form {
   flex-direction: column;
@@ -609,7 +605,6 @@ form textarea {
 form [name="Lname"] {
   display: none;
 }
-
 
 form input {
   border-bottom: 1px solid #dbd8d7;
@@ -664,7 +659,6 @@ form button {
   .contact form {
     width: 660px;
     align-items: flex-start;
-    
   }
 
   form button {
