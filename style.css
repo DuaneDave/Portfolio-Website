@@ -218,12 +218,12 @@ header {
     font-size: 18px;
     line-height: 2rem;
   }
+
   .icons {
     gap: 16px;
     height: 20px;
     left: 2rem;
     bottom: 60%;
-    /* transform: translateY(-50%); */
   }
 }
 
@@ -253,6 +253,7 @@ header {
     font-size: 20px;
     line-height: 2rem;
   }
+
   .icons {
     flex-direction: column;
     position: absolute;
@@ -260,7 +261,6 @@ header {
     height: 20px;
     left: 2rem;
     bottom: 60%;
-    /* transform: translateY(-50%); */
   }
 }
 
@@ -338,14 +338,17 @@ header {
   margin-bottom: 5rem;
   margin-top: 1rem;
 }
+
 .work-cards .card-details {
   position: relative;
   color: rgba(255, 255, 255, 0.815);
 }
+
 .work-cards .card-details img {
   height: 327px;
   width: 327px;
 }
+
 .work-cards .card-content h3 {
   color: var(--primary-color);
 }
@@ -356,14 +359,17 @@ header {
   left: 1.5rem;
   padding: 0.5em;
 }
+
 .work-cards .special {
   width: 100%;
   margin-block: 0 24px;
 }
+
 .btn-group {
   gap: 1rem;
   align-items: center;
 }
+
 @media screen and (min-width: 764px) {
   .caption {
     font-family: "Crete Round", sans-serif;
@@ -395,11 +401,13 @@ header {
     height: 340px;
     width: 400px;
   }
+
   .work-cards {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     padding-inline: 2em;
   }
+
   .work-cards .card-details img {
     height: 350px;
     width: 350px;
@@ -411,6 +419,7 @@ header {
     left: 2rem;
     padding: 0.5em;
   }
+
   .work-cards .web {
     top: 7rem;
   }
@@ -422,6 +431,7 @@ header {
 }
 
 /* === About-me Section === */
+
 .about-me {
   background-color: var(--background-color);
   position: relative;
@@ -538,6 +548,7 @@ header {
     width: 566px;
     padding-inline-start: 140px;
   }
+
   .about-me-content .about-info p {
     line-height: 24px;
     color: #f4f5f7;
@@ -563,6 +574,7 @@ header {
 }
 
 /* === Contact Section === */
+
 .contact {
   width: 100%;
   flex-direction: column;
@@ -610,24 +622,25 @@ form input {
   border-bottom: 1px solid #dbd8d7;
 }
 
-form input:valid,
-form textarea:valid {
-  border-bottom: 1px solid rgba(5, 197, 5, 0.596);
-}
-
-form input:invalid,
-form textarea:invalid {
-  border-bottom: 1px solid rgba(228, 75, 29, 0.596);
-}
 
 form textarea {
   background-color: #fbf8f7;
   height: 114px;
 }
 
+form input:valid,
+form textarea:valid {
+  border-bottom: 1px solid rgba(5, 197, 5, 0.596);
+}
+
 form input:focus,
 form textarea:focus {
   border: 2px solid rgb(240, 95, 119);
+}
+
+form input:invalid,
+form textarea:invalid {
+  border-bottom: 1px solid rgba(228, 75, 29, 0.596);
 }
 
 form input::placeholder,
@@ -675,7 +688,9 @@ form button {
     display: block;
   }
 }
+
 /* === Footer Section === */
+
 footer {
   margin-top: 164px;
 }
