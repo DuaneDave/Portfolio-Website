@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
+
   <body>
     <header>
       <a href="#home" class="logo">John Doe</a>
@@ -16,6 +17,22 @@
           <span class="line"></span>
           <span class="line"></span>
         </button>
+        <ul class="nav-menu flex">
+          <li class="nav-item">
+            <a href="#work" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#mail" class="nav-link mail">
+              <img src="asset/Icon - Mail.png" alt="">
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <section class="headline flex" id="home">
@@ -59,15 +76,16 @@
           </li>
         </ul>
       </div>
-      <img src="asset/Group.png" alt="Group" class="i-image" />
+      <div class="i-image"></div>
     </section>
     <main>
-      <section class="work-section">
+      <section class="work-section" id="work">
         <div class="caption flex">
           <h2 class="caption">My Recent Works</h2>
+          <div class="sep"></div>
         </div>
         <div class="cards grid">
-          <div class="card-details">
+          <div class="card-details feature flex">
             <img src="asset/card.png" alt="image" />
             <div class="card-content">
               <h3>Multi-Post Stories</h3>
@@ -83,18 +101,24 @@
                 <button class="btn">bootstrap</button>
                 <button class="btn">ruby</button>
               </div>
+              <button class="special">See Project</button>
+            </div>
+          </div>   
+        </div>
+        <div class="work-cards grid">
+          <div class="card-details big flex">
+            <img src="asset/Mask Group.png" alt="image" />
+            <div class="card-content">
             </div>
             <button class="special">See Project</button>
           </div>
-          <div class="card-details">
-            <img src="asset/card.png" alt="image" />
+          <div class="card-details flex">
+            <img src="asset/others.png" alt="image" />
             <div class="card-content">
-              <h3>Multi-Post Stories</h3>
+              <h3>Data Dashboard Healthcare</h3>
               <p>
                 A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
+                or sign-ups required. has been the industry's standard 
               </p>
               <div class="btn-group flex">
                 <button class="btn">css</button>
@@ -103,17 +127,14 @@
                 <button class="btn">ruby</button>
               </div>
             </div>
-            <button class="special">See Project</button>
           </div>
-          <div class="card-details">
-            <img src="asset/card.png" alt="image" />
-            <div class="card-content">
-              <h3>Multi-Post Stories</h3>
+          <div class="card-details flex">
+            <img src="asset/others.png" alt="image" />
+            <div class="card-content web">
+              <h3>Web Poetfolio</h3>
               <p>
                 A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
+                or sign-ups required. has been the industry's standard 
               </p>
               <div class="btn-group flex">
                 <button class="btn">css</button>
@@ -122,17 +143,14 @@
                 <button class="btn">ruby</button>
               </div>
             </div>
-            <button class="special">See Project</button>
           </div>
-          <div class="card-details">
-            <img src="asset/card.png" alt="image" />
+          <div class="card-details flex">
+            <img src="asset/others.png" alt="image" />
             <div class="card-content">
-              <h3>Multi-Post Stories</h3>
+              <h3>Profesional Art Printing Data More</h3>
               <p>
                 A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
+                or sign-ups required. has been the industry's standard 
               </p>
               <div class="btn-group flex">
                 <button class="btn">css</button>
@@ -141,17 +159,14 @@
                 <button class="btn">ruby</button>
               </div>
             </div>
-            <button class="special">See Project</button>
           </div>
-          <div class="card-details">
-            <img src="asset/card.png" alt="image" />
+          <div class="card-details flex">
+            <img src="asset/others.png" alt="image" />
             <div class="card-content">
-              <h3>Multi-Post Stories</h3>
+              <h3>Data Dashboard Healthcare</h3>
               <p>
                 A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
+                or sign-ups required. has been the industry's standard 
               </p>
               <div class="btn-group flex">
                 <button class="btn">css</button>
@@ -160,17 +175,14 @@
                 <button class="btn">ruby</button>
               </div>
             </div>
-            <button class="special">See Project</button>
           </div>
-          <div class="card-details">
-            <img src="asset/card.png" alt="image" />
-            <div class="card-content">
-              <h3>Multi-Post Stories</h3>
+          <div class="card-details flex">
+            <img src="asset/others.png" alt="image" />
+            <div class="card-content web">
+              <h3>Website Portfolio</h3>
               <p>
                 A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
+                or sign-ups required. has been the industry's standard 
               </p>
               <div class="btn-group flex">
                 <button class="btn">css</button>
@@ -179,43 +191,25 @@
                 <button class="btn">ruby</button>
               </div>
             </div>
-            <button class="special">See Project</button>
-          </div>
-          <div class="card-details">
-            <img src="asset/card.png" alt="image" />
-            <div class="card-content">
-              <h3>Multi-Post Stories</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a
-                standard dummy text.
-              </p>
-              <div class="btn-group flex">
-                <button class="btn">css</button>
-                <button class="btn">html</button>
-                <button class="btn">bootstrap</button>
-                <button class="btn">ruby</button>
-              </div>
-            </div>
-            <button class="special">See Project</button>
           </div>
         </div>
       </section>
-      <section class="about-me">
+      <section class="about-me" id="about">
         <div class="about-me-content flex">
-          <h2>About me</h2>
-          <div>
-            <p>
-              Hello I’m a software developer! I can help you build a product ,
-              feature or website Look through some of my work and experience! If
-              you like what you see and have a project you need coded, don’t
-              hestiate to contact me.
-            </p>
-            <button class="special">Get My Resume</button>
+          <div class="about-info">
+            <h2>About me</h2>
+            <div>
+              <p>
+                Hello I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience! If
+                you like what you see and have a project you need coded, don’t
+                hestiate to contact me.
+              </p>
+              <button class="special">Get My Resume</button>
+            </div>
           </div>
+          <div class="illustration"></div>
         </div>
-        <div class="illustration"></div>
         <hr />
         <section class="portfolio flex">
           <div class="info">
@@ -257,24 +251,52 @@
           </div>
         </section>
       </section>
-      <section class="contact flex">
+      <section class="contact flex" id="contact">
         <p>
-          I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
         </p>
-        <form class="flex" action="https://formspree.io/f/xdobralq" method="post"
+        <form
+          class="flex"
+          action="https://formspree.io/f/xdobralq"
+          method="post"
+          id="mail"
         >
-          <input name="fname" type="text" required placeholder="Full Name" maxlength="30">
-          <input name="email" type="text" required placeholder="Email address">
-          <textarea name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+          <div class="input-row flex">
+            <input
+            name="fname"
+            type="text"
+            required
+            placeholder="First Name"
+            maxlength="30"
+          />
+            <input
+            name="Lname"
+            type="text"
+            required
+            placeholder="Last Name"
+            maxlength="30"
+          />
+        </div>
+        <input
+          name="email"
+          type="text"
+          required
+          placeholder="Email address"
+        />
+          <textarea
+            name="message"
+            placeholder="Enter text here"
+            maxlength="500"
+            required
+          ></textarea>
           <button class="special">Get in touch</button>
         </form>
       </section>
     </main>
- 
-      <footer>
-      <hr>
-      <div class="footer">
-      </div>
+    <footer>
+      <hr />
+      <div class="footer"></div>
     </footer>
   </body>
 </html>
