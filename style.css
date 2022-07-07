@@ -72,6 +72,12 @@ button {
   border: 1px solid #f55800;
   color: #f55800;
 }
+
+.special:active {
+  background-color: #df5a0d;
+  color: white;
+}
+
 /* === Navigation Bar === */
 header {
   display: flex;
@@ -399,7 +405,7 @@ header {
 
   .work-cards .card-details img {
     height: 350px;
-    width: 280px;
+    width: 300px;
   }
 
   .work-cards .card-content {
@@ -409,13 +415,21 @@ header {
     padding: 0.5em;
   }
 
-  .work-cards .web {
-    top: 7rem;
+  .work-cards .special {
+    width: 300px;
+    margin-block: 0 24px;
   }
 
-  .work-cards .special {
-    width: 280px;
-    margin-block: 0 24px;
+  .first {
+    transform: translateY(2rem);
+  }
+
+  .web {
+    transform: translateY(4.7rem);
+  }
+
+  .last {
+    transform: translateY(2.8rem);
   }
 }
 
@@ -593,15 +607,27 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    flex: 1;
+  }
+
+  .portfolio ul li {
+    text-align: left;
   }
 
   .skill-head {
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .portfolio .info {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 4rem;
+    margin-right: 2.5rem;
+  }
+
+  .move {
+    transform: translateX(2.5rem);
   }
 }
 
@@ -641,15 +667,6 @@ form textarea {
   border: none;
 }
 
-.input-row {
-  flex-direction: column;
-  width: 100%;
-}
-
-form [name="Lname"] {
-  display: none;
-}
-
 form input {
   border-bottom: 1px solid #dbd8d7;
 }
@@ -667,11 +684,6 @@ form textarea:valid {
 form input:focus,
 form textarea:focus {
   border: 2px solid rgb(240, 95, 119);
-}
-
-form input:invalid,
-form textarea:invalid {
-  border-bottom: 1px solid rgba(228, 75, 29, 0.596);
 }
 
 form input::placeholder,
@@ -707,16 +719,6 @@ form button {
 
   form button {
     justify-self: flex-start;
-  }
-
-  .input-row {
-    flex-direction: row;
-    gap: 1rem;
-    width: 100%;
-  }
-
-  form [name="Lname"] {
-    display: block;
   }
 }
 
