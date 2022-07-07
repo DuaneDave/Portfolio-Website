@@ -19,6 +19,7 @@
 body {
   color: var(--primary-color);
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -371,6 +372,58 @@ header {
 }
 
 @media screen and (min-width: 764px) {
+  .feature {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .feature img {
+    height: 320px;
+    width: 400px;
+  }
+
+  .feature .card-content h3 {
+    margin-top: 0;
+  }
+
+  .work-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+  }
+
+  .work-cards .card-details img {
+    height: 350px;
+    width: 280px;
+  }
+
+  .work-cards .card-content {
+    position: absolute;
+    top: 4.2rem;
+    left: 6.5rem;
+    padding: 0.5em;
+  }
+
+  .work-cards .web {
+    top: 7rem;
+  }
+
+  .work-cards .special {
+    width: 280px;
+    margin-block: 0 24px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .feature img {
+    height: 300px;
+    width: 400px;
+  }
+
+  .feature .card-content {
+    width: 400px;
+  }
+  
   .caption {
     font-family: "Crete Round", sans-serif;
     position: relative;
@@ -391,42 +444,16 @@ header {
     width: 800px;
   }
 
-  .feature {
-    flex-direction: row;
-    gap: 1rem;
-    align-items: flex-end;
-  }
-
-  .feature img {
-    height: 340px;
-    width: 400px;
-  }
-
   .work-cards {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    padding-inline: 2em;
-  }
-
-  .work-cards .card-details img {
-    height: 350px;
-    width: 350px;
+    width: 964px;
+    margin-inline: auto;
   }
 
   .work-cards .card-content {
-    position: absolute;
-    top: 4.2rem;
-    left: 2rem;
+    top: 3.5rem;
+    left: 1rem;
     padding: 0.5em;
-  }
-
-  .work-cards .web {
-    top: 7rem;
-  }
-
-  .work-cards .special {
-    width: 350px;
-    margin-block: 0 24px;
   }
 }
 
@@ -663,7 +690,7 @@ form button {
     padding: 70px 142px 0 142px;
   }
 
-  .contact p {
+  .contact .parag {
     width: 455px;
     text-align: initial;
   }
