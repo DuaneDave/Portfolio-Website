@@ -67,6 +67,11 @@ button {
   border: none;
 }
 
+.special:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
 /* === Navigation Bar === */
 header {
   display: flex;
