@@ -389,7 +389,7 @@ header {
 
   .work-cards {
     grid-template-columns: 1fr 1fr;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .work-cards .card-details img {
@@ -423,7 +423,7 @@ header {
   .feature .card-content {
     width: 400px;
   }
-  
+
   .caption {
     font-family: "Crete Round", sans-serif;
     position: relative;
