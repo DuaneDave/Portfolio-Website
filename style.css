@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500;700&family=Open+Sans:ital@1&family=Poppins&family=Roboto:wght@700&family=Tiro+Devanagari+Marathi:ital@1&display=swap");
 
+/* === Custom Properties === */
+
 :root {
   --primary-color: #fff;
   --secondary-color: #ff6b00;
   --background-color: #1c1a19;
 }
+
+/* === Css Resets === */
 
 * {
   padding: 0;
@@ -15,6 +19,7 @@
 body {
   color: var(--primary-color);
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -40,6 +45,8 @@ button {
   padding: 7px 12px;
 }
 
+/* === Utility clases === */
+
 .flex {
   display: flex;
 }
@@ -48,6 +55,30 @@ button {
   display: grid;
 }
 
+.special {
+  background-color: var(--secondary-color);
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-block: 24px;
+  outline: none;
+  border: none;
+}
+
+.special:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.special:active {
+  background-color: #df5a0d;
+  color: white;
+}
+
+/* === Navigation Bar === */
 header {
   display: flex;
   justify-content: space-between;
@@ -87,6 +118,31 @@ header {
   border: 1px solid #acb7c3;
 }
 
+.nav-menu {
+  display: none;
+}
+
+@media screen and (min-width: 764px) {
+  header {
+    padding-inline: 80px 100px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .harmburger,
+  .line {
+    display: none;
+  }
+}
+
+/* === Headline section === */
 .headline {
   background-color: var(--background-color);
   height: 100vh;
@@ -97,12 +153,18 @@ header {
   align-items: flex-start;
   position: relative;
   padding: 1em;
+  overflow: hidden;
 }
 
 .i-image {
+  background: url("asset/Group.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 450px;
+  height: 450px;
   position: absolute;
-  right: 0.1rem;
-  bottom: 0;
+  right: -16.4rem;
+  bottom: -3.5rem;
 }
 
 .headline h1 {
@@ -141,6 +203,80 @@ header {
   gap: 1px;
 }
 
+@media screen and (min-width: 768px) {
+  .headline {
+    padding-left: 1.5em;
+    gap: 1rem;
+  }
+
+  .i-image {
+    width: 400px;
+    height: 90%;
+    right: -1.8rem;
+    bottom: -2rem;
+  }
+
+  .headline h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  .headline-details {
+    width: 460px;
+  }
+
+  .lead {
+    font-size: 18px;
+    line-height: 2rem;
+  }
+
+  .icons {
+    gap: 16px;
+    height: 20px;
+    left: 2rem;
+    bottom: 60%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .headline {
+    padding-left: 110px;
+  }
+
+  .i-image {
+    width: 420px;
+    height: 100%;
+    right: 0;
+    bottom: -4rem;
+  }
+
+  .headline h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 82px;
+  }
+
+  .headline-details {
+    width: 566px;
+  }
+
+  .lead {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+
+  .icons {
+    flex-direction: column;
+    position: absolute;
+    gap: 16px;
+    height: 20px;
+    left: 2rem;
+    bottom: 60%;
+  }
+}
+
+/* === Work Section === */
 .caption {
   font-family: "Crete Round", sans-serif;
   position: relative;
@@ -152,6 +288,7 @@ header {
 .caption h2 {
   font-size: 40px;
   line-height: 52px;
+  font-weight: 400;
   width: 327px;
   height: 83px;
   margin: 120px 24px 104px 24px;
@@ -160,7 +297,7 @@ header {
 .caption h2::after {
   content: "";
   width: 100%;
-  border: 1px solid #212121;
+  border: 1px solid #21212167;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -172,7 +309,7 @@ header {
 }
 
 .cards {
-  place-items: center;
+  place-content: center;
   width: 100%;
 }
 
@@ -180,16 +317,16 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 327px;
+  width: 100%;
 }
 
 .card-details img {
-  width: 100%;
+  width: 327px;
   height: 240px;
 }
 
 .card-content {
-  width: 100%;
+  width: 327px;
 }
 
 .card-content p {
@@ -208,26 +345,143 @@ header {
   margin-top: 24px;
 }
 
+.work-cards {
+  place-content: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.work-cards .card-details {
+  position: relative;
+  color: rgba(255, 255, 255, 0.815);
+}
+
+.work-cards .card-details img {
+  height: 327px;
+  width: 327px;
+}
+
+.work-cards .card-content h3 {
+  color: var(--primary-color);
+}
+
+.work-cards .card-content {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  padding: 0.5em;
+}
+
+.work-cards .special {
+  width: 100%;
+  margin-block: 0 24px;
+}
+
 .btn-group {
   gap: 1rem;
   align-items: center;
 }
 
-.special {
-  background-color: var(--secondary-color);
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  margin-block: 24px;
-  outline: none;
-  border: none;
+@media screen and (min-width: 764px) {
+  .feature {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .feature img {
+    height: 320px;
+    width: 400px;
+  }
+
+  .feature .card-content h3 {
+    margin-top: 0;
+  }
+
+  .work-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .work-cards .card-details img {
+    height: 350px;
+    width: 300px;
+  }
+
+  .work-cards .card-content {
+    position: absolute;
+    top: 4.2rem;
+    left: 6.5rem;
+    padding: 0.5em;
+  }
+
+  .work-cards .special {
+    width: 300px;
+    margin-block: 0 24px;
+  }
+
+  .first {
+    transform: translateY(2rem);
+  }
+
+  .web {
+    transform: translateY(4.7rem);
+  }
+
+  .last {
+    transform: translateY(2.8rem);
+  }
 }
+
+@media screen and (min-width: 1080px) {
+  .feature img {
+    height: 300px;
+    width: 400px;
+  }
+
+  .feature .card-content {
+    width: 400px;
+  }
+
+  .caption {
+    font-family: "Crete Round", sans-serif;
+    position: relative;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .caption h2 {
+    min-width: 327px;
+    height: 83px;
+  }
+
+  .caption h2::after {
+    bottom: 65%;
+    left: 100%;
+    width: 800px;
+  }
+
+  .work-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 964px;
+    margin-inline: auto;
+  }
+
+  .work-cards .card-content {
+    top: 3.5rem;
+    left: 1rem;
+    padding: 0.5em;
+  }
+}
+
+/* === About-me Section === */
 
 .about-me {
   background-color: var(--background-color);
   position: relative;
+  overflow: hidden;
 }
 
 .about-me-content {
@@ -236,8 +490,16 @@ header {
   margin-bottom: 50px;
 }
 
-.about-me-content h2 {
-  margin: 120px 24px 24px 24px;
+.skill-head h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-block: 44px;
+}
+
+.about-me-content .about-info h2 {
+  margin: 120px 0 24px 0;
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-size: 72px;
@@ -245,7 +507,7 @@ header {
   color: var(--secondary-color);
 }
 
-.about-me-content p {
+.about-me-content .about-info p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 24px;
@@ -255,7 +517,7 @@ header {
   height: 148px;
 }
 
-.about-me .special {
+.about-info .special {
   width: 161px;
   height: 48px;
   align-self: flex-start;
@@ -267,10 +529,10 @@ header {
   background-image: url("asset/bottomillus.png");
   background-repeat: no-repeat;
   background-size: contain;
-  right: 0;
-  width: 250px;
-  height: 380px;
-  bottom: 70%;
+  right: -30rem;
+  width: 700px;
+  height: 700px;
+  bottom: 58%;
 }
 
 .portfolio {
@@ -284,14 +546,6 @@ header {
 .skill-head {
   align-items: center;
   gap: 1rem;
-}
-
-.skill-head h2 {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  margin-block: 44px;
 }
 
 .info li {
@@ -323,6 +577,62 @@ header {
   border-radius: 50%;
 }
 
+@media screen and (min-width: 768px) {
+  .about-me-content {
+    flex-direction: row;
+  }
+
+  .illustration {
+    position: relative;
+    right: -15rem;
+    width: 500px;
+    height: 700px;
+    bottom: -9rem;
+  }
+
+  .about-info {
+    width: 566px;
+    padding-inline-start: 140px;
+  }
+
+  .about-me-content .about-info p {
+    line-height: 24px;
+    color: #f4f5f7;
+    margin-bottom: 0;
+    width: 450px;
+    height: auto;
+  }
+
+  .portfolio {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .portfolio ul li {
+    text-align: left;
+  }
+
+  .skill-head {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .portfolio .info {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 4rem;
+    margin-right: 2.5rem;
+  }
+
+  .move {
+    transform: translateX(2.5rem);
+  }
+}
+
+/* === Contact Section === */
+
 .contact {
   width: 100%;
   flex-direction: column;
@@ -330,7 +640,7 @@ header {
   padding-inline: 1em;
 }
 
-.contact p {
+.contact .parag {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   width: 327px;
@@ -341,15 +651,12 @@ header {
   margin-bottom: 73px;
 }
 
-form {
-  width: 327px;
-  font-family: "Inter", sans-serif;
-}
-
 .contact form {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  width: 327px;
+  font-family: "Inter", sans-serif;
 }
 
 form input,
@@ -364,17 +671,14 @@ form input {
   border-bottom: 1px solid #dbd8d7;
 }
 
-form input:valid {
-  border-bottom: 1px solid rgba(5, 197, 5, 0.596);
-}
-
-form input:invalid {
-  border-bottom: 1px solid rgba(228, 75, 29, 0.596);
-}
-
 form textarea {
   background-color: #fbf8f7;
   height: 114px;
+}
+
+form input:valid,
+form textarea:valid {
+  border-bottom: 1px solid rgba(5, 197, 5, 0.596);
 }
 
 form input:focus,
@@ -394,6 +698,32 @@ form button {
   width: 131px;
 }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 70px 142px 0 142px;
+  }
+
+  .contact .parag {
+    width: 455px;
+    text-align: initial;
+  }
+
+  .contact form {
+    width: 660px;
+    align-items: flex-start;
+  }
+
+  form button {
+    justify-self: flex-start;
+  }
+}
+
+/* === Footer Section === */
+
 footer {
   margin-top: 164px;
 }
@@ -405,4 +735,17 @@ footer {
   background-position: 4.5rem 0;
   width: 100%;
   height: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    margin-top: 80px;
+  }
+
+  .footer {
+    background: url("asset/Bottom\ Naviagation.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 0;
+  }
 }
