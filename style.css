@@ -472,7 +472,7 @@ header {
   background-image: url("asset/bottomillus.png");
   background-repeat: no-repeat;
   background-size: contain;
-  left: 60%;
+  left: 55%;
   bottom: -15rem;
   width: 700px;
   height: 700px;
@@ -536,7 +536,7 @@ header {
     width: 500px;
     height: 500px;
     bottom: -25%;
-    right: -45%;
+    left: 62%;
   }
 
   .portfolio {
