@@ -186,7 +186,7 @@ header {
   width: 450px;
   height: 450px;
   position: absolute;
-  right: -16.4rem;
+  right: -16.7rem;
   bottom: -3.5rem;
 }
 
@@ -306,10 +306,10 @@ header {
 }
 
 .caption h2 {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 52px;
   font-weight: 400;
-  width: 327px;
+  width: 300px;
   color: black;
   position: relative;
   height: 83px;
@@ -322,7 +322,7 @@ header {
   border: 1px solid #21212167;
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
 }
 
 .card {
