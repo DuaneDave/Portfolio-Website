@@ -154,7 +154,7 @@ header {
   width: 100%;
   height: 100vh;
   background-color: var(--background-color);
-  padding-inline: 1.5em;
+  padding-inline: 1em;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -644,23 +644,13 @@ footer {
 }
 
 .footer {
-  background: url("asset/Bottom\ Naviagation.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 4.5rem 0;
   width: 100%;
   height: 4rem;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   footer {
     margin-top: 80px;
-  }
-
-  .footer {
-    background: url("asset/Bottom\ Naviagation.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
   }
 }
