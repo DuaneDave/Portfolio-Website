@@ -186,8 +186,8 @@ header {
   width: 450px;
   height: 450px;
   position: absolute;
-  right: -16.4rem;
-  bottom: -3.5rem;
+  right: -17rem;
+  bottom: -3.9rem;
 }
 
 .lead {
@@ -306,7 +306,7 @@ header {
 }
 
 .caption h2 {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 52px;
   font-weight: 400;
   width: 327px;
