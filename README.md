@@ -10,22 +10,19 @@ This is a portfolio site inspired by figma
 ![screenshot](asset/Portfolio%20-%20img5.png)
 ![screenshot](asset/Portfolio%20-%20img1.png)
 
-
 # <div align="center"><a href="https://github.com/DuaneDave/Portfolio-Website" text="bold">Live Demo</a></div>
 
- https://duanedave.github.io/Portfolio-Website/
+https://duanedave.github.io/Portfolio-Website/
 
 ![screenshot](asset/portfolio%20gif.gif)
 
-
 > A site showing some of my best works structured beautifully. This site is fully responsive and compatible to all screen sizes and all device. A combination of flexbox and grid are used to bring this site to life. It is divided into a navigation section, an homepage section, a work section, an about section and a footer section.
-
 
 ## Built With
 
 - HTML
 - CSS3
-
+- JavaScript
 
 # Getting Started
 
@@ -62,7 +59,6 @@ You can run tests by following these steps:
 - GitHub: [@githubhandle](https://github.com/DuaneDave)
 - Twitter: [@twitterhandle](https://twitter.com/dave_duane)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/okiemute-david-obiebi-6b4a6a230/)
-
 
 ## 🤝 Contributing
 
