@@ -118,7 +118,6 @@ header {
   top: 50%;
   right: 2rem;
   transform: translateY(-50%);
-
   z-index: 1000;
 }
 
