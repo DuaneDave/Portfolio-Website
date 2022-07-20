@@ -784,14 +784,12 @@ form button {
   width: 131px;
 }
 
-label {
-  display: flex;
-  flex-direction: column;
+.label {
   width: 100%;
-  gap: 1rem;
+  margin-top: 1rem;
 }
 
-label .invalid {
+.label .invalid {
   font-size: 14px;
   color: rgba(255, 0, 0, 0.877);
   font-style: italic;

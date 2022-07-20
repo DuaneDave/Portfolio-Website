@@ -195,8 +195,7 @@
           </div>
           <!--=== Modal Pop-Up ===  -->
           <section id="wrapper">
-            <div class="modal grid">
-            </div>
+            <div class="modal grid"></div>
           </section>
         </div>
       </section>
@@ -279,22 +278,24 @@
             placeholder="Full Name"
             maxlength="30"
           />
-          <label>
-            <input
+          <input
             name="email"
             type="text"
             required
             placeholder="Email address"
             id="email"
           />
-            <small class="invalid" id="error">Email can not be in uppercase</small>
-          </label>
           <textarea
             name="message"
             placeholder="Enter text here"
             maxlength="500"
             required
           ></textarea>
+          <div class="label">
+            <small class="invalid" id="error"
+              >Email can not be in uppercase</small
+            >
+          </div>
           <button class="special" type="submit">Get in touch</button>
         </form>
       </section>
