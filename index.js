@@ -6,6 +6,9 @@ const modal = document.querySelector('.modal');
 const modalTrigger = document.querySelectorAll('.modal-trigger');
 const wrapper = document.getElementById('wrapper');
 const noScroll = document.querySelector('body');
+const form = document.querySelector('form');
+const email = document.getElementById('email');
+const error = document.getElementById('error');
 
 const projects = [
   {
@@ -88,3 +91,15 @@ modalTrigger.forEach((n) => n.addEventListener('click', () => {
     noScroll.classList.remove('no-scroll');
   });
 }));
+
+form.addEventListener('submit', (e) => {
+  const val = email.value;
+  if (val !== val.toLowerCase()) {
+    error.classList.add('incorrect');
+    e.preventDefault();
+  } else {
+    error.classList.remove('incorrect');
+    return true;
+  }
+  return true;
+});

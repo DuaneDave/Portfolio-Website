@@ -784,6 +784,24 @@ form button {
   width: 131px;
 }
 
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+label .invalid {
+  font-size: 14px;
+  color: rgba(255, 0, 0, 0.877);
+  font-style: italic;
+  display: none;
+}
+
+.invalid.incorrect {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .contact {
     flex-direction: row;

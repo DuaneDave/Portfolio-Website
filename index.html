@@ -279,12 +279,16 @@
             placeholder="Full Name"
             maxlength="30"
           />
-          <input
+          <label>
+            <input
             name="email"
             type="text"
             required
             placeholder="Email address"
+            id="email"
           />
+            <small class="invalid" id="error">Email can not be in uppercase</small>
+          </label>
           <textarea
             name="message"
             placeholder="Enter text here"
