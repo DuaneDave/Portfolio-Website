@@ -4,6 +4,8 @@ const navMenu = document.querySelector('.nav-menu');
 const navLink = document.querySelectorAll('.nav-link');
 const modal = document.querySelector('.modal');
 const modalTrigger = document.querySelectorAll('.modal-trigger');
+const wrapper = document.getElementById('wrapper');
+const noScroll = document.querySelector('body');
 
 const projects = [
   {
@@ -76,9 +78,13 @@ function createModal() {
 modalTrigger.forEach((n) => n.addEventListener('click', () => {
   createModal();
   modal.classList.add('active');
+  wrapper.classList.add('blur');
+  noScroll.classList.add('no-scroll');
   const btnClose = document.querySelector('.btn-close');
 
   btnClose.addEventListener('click', () => {
     modal.classList.remove('active');
+    wrapper.classList.remove('blur');
+    noScroll.classList.remove('no-scroll');
   });
 }));

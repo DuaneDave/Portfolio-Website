@@ -8,7 +8,7 @@
     <title>David</title>
   </head>
   <body>
-     <!--=== Headline section ===  -->
+    <!--=== Headline section ===  -->
     <header class="flex">
       <a href="#home" class="logo">David</a>
       <nav class="navbar flex">
@@ -81,7 +81,7 @@
       <div class="i-image"></div>
     </section>
     <main>
-       <!--=== Work section ===  -->
+      <!--=== Work section ===  -->
       <section class="work-section flex" id="work">
         <div class="caption flex">
           <h2>My Recent Works</h2>
@@ -107,7 +107,7 @@
           </div>
         </div>
 
-         <!--=== Cards section ===  -->
+        <!--=== Cards section ===  -->
         <div class="showcase grid">
           <div class="show">
             <img src="asset/bg.png" alt="image" />
@@ -194,13 +194,58 @@
             <button class="special modal-trigger">See Project</button>
           </div>
           <!--=== Modal Pop-Up ===  -->
-          <section class="modal grid">
-            
+          <section id="wrapper">
+            <div class="modal grid">
+              <div class="modal-head">
+                <h2>
+                  ${width < 1080 ? projects[0].title[0] : projects[0].title[1]}
+                </h2>
+                <div class="btn-group flex">
+                  <button class="btn">${projects[0].technologies[0]}</button>
+                  <button class="btn">${projects[0].technologies[1]}</button>
+                  <button class="btn">${projects[0].technologies[2]}</button>
+                </div>
+              </div>
+  
+              <div class="modal-content flex">
+                <img
+                  src="${projects[0].imgSrc[0]}"
+                  alt="${projects[0].imgSrc[1]}"
+                />
+                <div class="modal-details flex">
+                  <p class="modal-content">
+                    ${ width < 1080 ? projects[0].description[0] :
+                    projects[0].description[1] }
+                  </p>
+                  <div class="modal-actions flex">
+                    <button class="special">
+                      <a
+                        href="${
+              projects[0].link[0]
+            }"
+                        class="flex"
+                        >See live <img src="asset/see.png"
+                      /></a>
+                    </button>
+                    <button class="special flex">
+                      <a
+                        href="${
+              projects[0].link[1]
+            }"
+                        class="flex"
+                        >See source <img src="asset/linkgit.png"
+                      /></a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-close">X</div>
+            </div>
           </section>
         </div>
       </section>
 
-       <!--=== About section ===  -->
+      <!--=== About section ===  -->
       <section class="about-me grid" id="about">
         <div class="about-me-content flex">
           <div class="about-info">
@@ -259,7 +304,7 @@
         </section>
       </section>
 
-       <!--=== Contact section ===  -->
+      <!--=== Contact section ===  -->
       <section class="contact flex" id="contact">
         <p class="parag text-dark">
           I'm always interested in hearing about new projects, so if you'd like
@@ -295,7 +340,7 @@
       </section>
     </main>
 
-     <!--=== Footer section ===  -->
+    <!--=== Footer section ===  -->
     <footer>
       <hr />
       <div class="footer flex">
