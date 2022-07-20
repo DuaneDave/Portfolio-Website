@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500;700&family=Open+Sans:ital@1&family=Poppins&family=Roboto:wght@700&family=Tiro+Devanagari+Marathi:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500;700&family=Open+Sans:ital@1&family=Poppins&family=Roboto:wght@700&family=Tiro+Devanagari+Marathi:ital@1&display=swap');
 
 /* === Custom Properties === */
 
@@ -18,7 +18,7 @@
 
 body {
   color: var(--primary-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 
@@ -36,7 +36,7 @@ a {
 }
 
 button {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   border: 1px solid #8993a4;
   background: rgba(255, 255, 255, 0.24);
   font-size: 15px;
@@ -62,7 +62,7 @@ button {
 .special {
   background-color: var(--secondary-color);
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -72,9 +72,9 @@ button {
 }
 
 .special:hover {
-  background-color: #fff5e1;
+  background-color: #e2651d;
   border: 1px solid #f55800;
-  color: #f55800;
+  color: white;
   transition: 0.5s ease;
 }
 
@@ -102,7 +102,7 @@ header {
 }
 
 .logo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
 
@@ -214,7 +214,7 @@ header {
 }
 
 .headline-info h1 {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-weight: 700;
   color: var(--secondary-color);
   font-size: 56px;
@@ -222,13 +222,13 @@ header {
 }
 
 .headline-info h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 32px;
 }
 
 .i-image {
-  background: url("asset/Group.png");
+  background: url('asset/Group.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 450px;
@@ -344,10 +344,11 @@ header {
   align-items: center;
   flex-direction: column;
   padding: 1em;
+  position: relative;
 }
 
 .caption {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -365,7 +366,7 @@ header {
 }
 
 .caption h2::after {
-  content: "";
+  content: '';
   width: 100%;
   border: 1px solid #21212167;
   position: absolute;
@@ -380,7 +381,7 @@ header {
 
 .card-content {
   position: absolute;
-  bottom: 1rem;
+  bottom: 3rem;
   left: 1rem;
 }
 
@@ -389,7 +390,7 @@ header {
 }
 
 .card-content h3 {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
@@ -398,7 +399,7 @@ header {
 
 .card-content p {
   margin-block: 12px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 24px;
 }
@@ -431,12 +432,85 @@ header {
   align-items: center;
 }
 
+.modal {
+  width: 90%;
+  max-width: 968px;
+  color: black;
+  position: absolute;
+  background-color: white;
+  padding: 1em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  z-index: 1000;
+  box-shadow:
+    -5px 8px 10px rgba(0, 0, 0, 0.24),
+    5px 8px 10px rgba(0, 0, 0, 0.158);
+  transition: transform 0.5s ease-in;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.modal-content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 220px;
+  margin: 24px 0;
+}
+
+.modal-details {
+  flex-direction: column;
+  width: 90%;
+}
+
+.modal-details p {
+  width: auto;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  gap: 1.5rem;
+}
+
+.modal-actions a {
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-actions a img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.btn-close {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: black;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+}
 @media screen and (min-width: 768px) {
   .caption {
     justify-content: flex-start;
     margin-left: 2rem;
   }
-
   .caption h2::after {
     bottom: 65%;
     left: 100%;
@@ -461,6 +535,30 @@ header {
     margin-top: 5rem;
     margin-inline: auto;
   }
+
+  .modal {
+    top: 75%;
+  }
+
+  .modal-content img {
+    height: 320px;
+    width: 50%;
+  }
+
+  .modal-content {
+    flex-direction: row;
+    gap: 1.3rem;
+  }
+
+  .modal-details {
+    max-width: 600px;
+    width: 50%;
+    gap: 1rem;
+  }
+
+  .modal-details p {
+    max-width: auto;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -470,6 +568,17 @@ header {
 
   .caption h2::after {
     width: 670px;
+  }
+
+  .modal-content img {
+    width: 500px;
+    height: 328px;
+  }
+
+  .modal-details p {
+    max-width: 600px;
+    width: 422px;
+    font-size: 1rem;
   }
 }
 
@@ -493,7 +602,7 @@ header {
 
 .about-info h2 {
   margin: 120px 0 24px 0;
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
@@ -501,7 +610,7 @@ header {
 }
 
 .about-info p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 24px;
   color: #f4f5f7;
@@ -517,7 +626,7 @@ header {
 
 .illustration {
   position: absolute;
-  background-image: url("asset/bottomillus.png");
+  background-image: url('asset/bottomillus.png');
   background-repeat: no-repeat;
   background-size: contain;
   left: 55%;
@@ -541,7 +650,7 @@ header {
 
 .info li {
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 2rem;
   font-weight: 400;
   font-size: 22px;
@@ -608,7 +717,7 @@ header {
 }
 
 .contact .parag {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   width: 327px;
   line-height: 44px;
@@ -623,7 +732,7 @@ form {
   align-items: center;
   gap: 1rem;
   width: 327px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 form input,
