@@ -53,7 +53,7 @@ function createModal() {
   </div>
 
   <div class="modal-content flex">
-  <img src='${projects[0].imgSrc[0]}' alt='${projects[0].imgSrc[1]}' />
+  <img src="${projects[0].imgSrc[0]}" alt="${projects[0].imgSrc[1]}" />
   <div class="modal-details flex">
   <p class="modal-content">${
   width < 1080 ? projects[0].description[0] : projects[0].description[1]
