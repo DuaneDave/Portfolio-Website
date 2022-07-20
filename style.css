@@ -444,7 +444,8 @@ header {
   transform: translate(-50%, -50%) scale(0);
   border: 1px solid rgba(0, 0, 0, 0.514);
   z-index: 1000;
-  box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.24),
+  box-shadow:
+    -5px 8px 10px rgba(0, 0, 0, 0.24),
     5px 8px 10px rgba(0, 0, 0, 0.158);
   transition: transform 0.5s ease-in;
 }
