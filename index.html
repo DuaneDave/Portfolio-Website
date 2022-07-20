@@ -194,54 +194,7 @@
             <button class="special modal-trigger">See Project</button>
           </div>
           <!--=== Modal Pop-Up ===  -->
-          <section id="wrapper">
-            <div class="modal grid">
-              <div class="modal-head">
-                <h2>
-                  ${width < 1080 ? projects[0].title[0] : projects[0].title[1]}
-                </h2>
-                <div class="btn-group flex">
-                  <button class="btn">${projects[0].technologies[0]}</button>
-                  <button class="btn">${projects[0].technologies[1]}</button>
-                  <button class="btn">${projects[0].technologies[2]}</button>
-                </div>
-              </div>
-  
-              <div class="modal-content flex">
-                <img
-                  src="${projects[0].imgSrc[0]}"
-                  alt="${projects[0].imgSrc[1]}"
-                />
-                <div class="modal-details flex">
-                  <p class="modal-content">
-                    ${ width < 1080 ? projects[0].description[0] :
-                    projects[0].description[1] }
-                  </p>
-                  <div class="modal-actions flex">
-                    <button class="special">
-                      <a
-                        href="${
-              projects[0].link[0]
-            }"
-                        class="flex"
-                        >See live <img src="asset/see.png"
-                      /></a>
-                    </button>
-                    <button class="special flex">
-                      <a
-                        href="${
-              projects[0].link[1]
-            }"
-                        class="flex"
-                        >See source <img src="asset/linkgit.png"
-                      /></a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="btn-close">X</div>
-            </div>
-          </section>
+          <section id="wrapper"></section>
         </div>
       </section>
 
