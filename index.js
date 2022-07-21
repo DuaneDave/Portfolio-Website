@@ -3,6 +3,9 @@ const harmburger = document.querySelector('.harmburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLink = document.querySelectorAll('.nav-link');
 const panel = document.querySelector('.showcase');
+const form = document.querySelector('form');
+const email = document.getElementById('email');
+const error = document.getElementById('error');
 
 const project = [
   {
@@ -252,4 +255,16 @@ navLink.forEach((n) => {
     harmburger.classList.remove('slide');
     navMenu.classList.remove('slide');
   });
+});
+
+form.addEventListener('submit', (e) => {
+  const val = email.value;
+  if (val !== val.toLowerCase()) {
+    error.classList.add('incorrect');
+    e.preventDefault();
+  } else {
+    error.classList.remove('incorrect');
+    return true;
+  }
+  return true;
 });

@@ -444,6 +444,7 @@ header {
   transform: translate(-50%, -50%) scale(0);
   border: 1px solid rgba(0, 0, 0, 0.514);
   transition: transform 0.4s ease-in;
+  z-index: 3000;
 }
 
 .blur {
@@ -786,6 +787,22 @@ form textarea::placeholder {
 form button {
   height: 48px;
   width: 131px;
+}
+
+.label {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.label .invalid {
+  font-size: 14px;
+  color: rgba(255, 0, 0, 0.877);
+  font-style: italic;
+  display: none;
+}
+
+.invalid.incorrect {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
