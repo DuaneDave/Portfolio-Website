@@ -4,8 +4,6 @@ const navMenu = document.querySelector('.nav-menu');
 const navLink = document.querySelectorAll('.nav-link');
 const panel = document.querySelector('.showcase');
 const form = document.querySelector('form');
-const email = document.getElementById('email');
-const error = document.getElementById('error');
 
 const project = [
   {
@@ -189,11 +187,10 @@ const noScroll = document.querySelector('body');
 const modalTrigger = document.querySelectorAll('.modal-trigger');
 
 function createModal() {
-  project.forEach((n, idx) => {
-    const width = innerWidth;
+  project.forEach((n) => {
     modal.innerHTML = `
   <div class="modal-head">
-    <h2>${project[idx].title}</h2>
+    <h2>${n.title}</h2>
     <div class="btn-group flex">
       <button class="btn">${n.technologies.html}</button>
       <button class="btn">${n.technologies.bootstrap}</button>
@@ -204,8 +201,7 @@ function createModal() {
   <div class="modal-content flex">
   <img src="${n.imgSrc}" alt="my project" />
   <div class="modal-details flex">
-  <p class="modal-content">${
-  width < 768 ? n.description.small : n.description.fullText
+  <p class="modal-content">${n.description.small
 }</p>
   <div class="modal-actions flex">
   <button class="special">
