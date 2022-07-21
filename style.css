@@ -585,6 +585,10 @@ header {
     height: 328px;
   }
 
+  .modal-details {
+    gap: 4rem;
+  }
+
   .modal-details p {
     max-width: 600px;
     width: 422px;
