@@ -4,6 +4,8 @@ const navMenu = document.querySelector('.nav-menu');
 const navLink = document.querySelectorAll('.nav-link');
 const panel = document.querySelector('.showcase');
 const form = document.querySelector('form');
+const email = document.getElementById('email');
+const error = document.getElementById('error');
 
 const project = [
   {
@@ -17,6 +19,8 @@ const project = [
 
       fullText:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+        small:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
     },
 
     link: {
@@ -42,6 +46,8 @@ const project = [
 
       fullText:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+        small:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
     },
 
     link: {
@@ -67,6 +73,8 @@ const project = [
 
       fullText:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+        small:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
     },
 
     link: {
@@ -92,6 +100,8 @@ const project = [
 
       fullText:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+        small:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
     },
 
     link: {
@@ -117,6 +127,8 @@ const project = [
 
       fullText:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+        small:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
     },
 
     link: {
@@ -144,7 +156,7 @@ const project = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
 
       small:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
     },
 
     link: {
@@ -186,31 +198,30 @@ const wrapper = document.getElementById('wrapper');
 const noScroll = document.querySelector('body');
 const modalTrigger = document.querySelectorAll('.modal-trigger');
 
-function createModal() {
-  project.forEach((n) => {
+function createModal(idx) {
     modal.innerHTML = `
   <div class="modal-head">
-    <h2>${n.title}</h2>
+    <h2>${project[idx].title}</h2>
     <div class="btn-group flex">
-      <button class="btn">${n.technologies.html}</button>
-      <button class="btn">${n.technologies.bootstrap}</button>
-      <button class="btn">${n.technologies.ror}</button>
+      <button class="btn">${project[idx].technologies.html}</button>
+      <button class="btn">${project[idx].technologies.bootstrap}</button>
+      <button class="btn">${project[idx].technologies.ror}</button>
     </div>
   </div>
 
   <div class="modal-content flex">
-  <img src="${n.imgSrc}" alt="my project" />
+  <img src="${project[idx].imgSrc}" alt="my project" />
   <div class="modal-details flex">
-  <p class="modal-content">${n.description.small
+  <p class="modal-content">${project[idx].description.small
 }</p>
   <div class="modal-actions flex">
   <button class="special">
   <a href="${
-  n.link.seeLive
+  project[idx].link.seeLive
 }" class="flex">See live <img src="asset/see.png" /></a>
   </button>
   <button class="special flex"><a href="${
-  n.link.sources
+  project[idx].link.sources
 }" class="flex">See source <img src="asset/linkgit.png" /></a>
   </button>
   </div>
@@ -218,11 +229,10 @@ function createModal() {
   </div>
   <div class="btn-close">X</div>
   `;
-  });
 }
 
-modalTrigger.forEach((n) => n.addEventListener('click', () => {
-  createModal();
+modalTrigger.forEach((n, idx) => n.addEventListener('click', () => {
+  createModal(idx);
   modal.classList.add('active');
   wrapper.classList.add('blur');
   noScroll.classList.add('no-scroll');
