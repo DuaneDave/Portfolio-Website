@@ -251,14 +251,32 @@ navLink.forEach((n) => {
   });
 });
 
+const fName = document.querySelector('#name');
+const txt = document.querySelector('textarea');
+
 form.addEventListener('submit', (e) => {
   const val = email.value;
+
+  const store = {};
+
   if (val !== val.toLowerCase()) {
     error.classList.add('incorrect');
     e.preventDefault();
   } else {
+    store.name = fName.value;
+    store.email = email.value;
+    store.txt = txt.value;
     error.classList.remove('incorrect');
-    return true;
+    form.submit();
   }
-  return true;
+  localStorage.setItem('user', JSON.stringify(store));
 });
+
+function getLs() {
+  const see = JSON.parse(localStorage.getItem('user'));
+  fName.value = see.name;
+  email.value = see.email;
+  txt.value = see.txt;
+}
+
+getLs();
