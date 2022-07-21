@@ -8,6 +8,7 @@
     <title>David</title>
   </head>
   <body>
+    <!--=== Headline section ===  -->
     <header class="flex">
       <a href="#home" class="logo">David</a>
       <nav class="navbar flex">
@@ -80,6 +81,7 @@
       <div class="i-image"></div>
     </section>
     <main>
+      <!--=== Work section ===  -->
       <section class="work-section flex" id="work">
         <div class="caption flex">
           <h2>My Recent Works</h2>
@@ -104,88 +106,18 @@
             <button class="special">See Project</button>
           </div>
         </div>
+
+        <!--=== Cards section ===  -->
         <div class="showcase grid">
-          <div class="show">
-            <img src="asset/bg.png" alt="image" />
-            <button class="special">See Project</button>
-          </div>
-          <div class="show">
-            <img src="asset/others.png" alt="image" />
-            <div class="card-content">
-              <h3>Data Dashboard Healthcare</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="btn-group flex">
-                <button class="btn">css</button>
-                <button class="btn">html</button>
-                <button class="btn">bootstrap</button>
-              </div>
-            </div>
-          </div>
-          <div class="show">
-            <img src="asset/others.png" alt="image" />
-            <div class="card-content">
-              <h3>Website Protfolio</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="btn-group flex">
-                <button class="btn">css</button>
-                <button class="btn">html</button>
-                <button class="btn">bootstrap</button>
-              </div>
-            </div>
-          </div>
-          <div class="show">
-            <img src="asset/others.png" alt="image" />
-            <div class="card-content">
-              <h3>Profesional Art Printing Data More</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="btn-group flex">
-                <button class="btn">css</button>
-                <button class="btn">html</button>
-                <button class="btn">bootstrap</button>
-              </div>
-            </div>
-          </div>
-          <div class="show">
-            <img src="asset/others.png" alt="image" />
-            <div class="card-content">
-              <h3>Data Dashboard Healthcare</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="btn-group flex">
-                <button class="btn">css</button>
-                <button class="btn">html</button>
-                <button class="btn">bootstrap</button>
-              </div>
-            </div>
-          </div>
-          <div class="show">
-            <img src="asset/others.png" alt="image" />
-            <div class="card-content">
-              <h3>Website Protfolio</h3>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <div class="btn-group flex">
-                <button class="btn">css</button>
-                <button class="btn">html</button>
-                <button class="btn">bootstrap</button>
-              </div>
-            </div>
-          </div>
+       
         </div>
+        <section id="wrapper">
+          <div class="modal grid">
+          </div>
+        </section>
       </section>
+
+      <!--=== About section ===  -->
       <section class="about-me grid" id="about">
         <div class="about-me-content flex">
           <div class="about-info">
@@ -243,6 +175,8 @@
           </div>
         </section>
       </section>
+
+      <!--=== Contact section ===  -->
       <section class="contact flex" id="contact">
         <p class="parag text-dark">
           I'm always interested in hearing about new projects, so if you'd like
@@ -266,6 +200,7 @@
             type="text"
             required
             placeholder="Email address"
+            id="email"
           />
           <textarea
             name="message"
@@ -273,10 +208,17 @@
             maxlength="500"
             required
           ></textarea>
+          <div class="label">
+            <small class="invalid" id="error"
+              >Email can not be in uppercase</small
+            >
+          </div>
           <button class="special" type="submit">Get in touch</button>
         </form>
       </section>
     </main>
+
+    <!--=== Footer section ===  -->
     <footer>
       <hr />
       <div class="footer flex">
