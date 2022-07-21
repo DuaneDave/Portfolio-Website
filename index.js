@@ -2,70 +2,216 @@
 const harmburger = document.querySelector('.harmburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLink = document.querySelectorAll('.nav-link');
-const modal = document.querySelector('.modal');
-const modalTrigger = document.querySelectorAll('.modal-trigger');
-const wrapper = document.getElementById('wrapper');
-const noScroll = document.querySelector('body');
+const panel = document.querySelector('.showcase');
 
-const projects = [
+const project = [
   {
-    id: 'project1',
-    title: [
-      'Multi-Post Stories',
-      'Keeping track of hundreds of components website',
-    ],
-    description: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    id: 1,
 
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    ],
-    link: [
-      'https://duanedave.github.io/Portfolio-Website/',
-      'https://github.com/DuaneDave/Portfolio-Website',
-    ],
-    technologies: ['html', 'bootstrap', 'ruby on rails'],
-    imgSrc: ['asset/popup.png', 'my project'],
+    title: 'Data Dashboard Healthcare',
+
+    description: {
+      summary:
+        'A daily selection of privately personalise reads; no accounts or sign-ups required. has been the industry standard',
+
+      fullText:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    },
+
+    link: {
+      seeLive: 'https://duanedave.github.io/Portfolio-Website/',
+      sources: 'https://github.com/DuaneDave/Portfolio-Website',
+    },
+    technologies: {
+      html: 'html',
+      bootstrap: 'bootstrap',
+      ror: 'ruby on rails',
+    },
+    imgSrc: 'asset/popup.png',
+  },
+
+  {
+    id: 2,
+
+    title: 'Website Portfolio',
+
+    description: {
+      summary:
+        'A daily selection of privately personalise reads; no accounts or sign-ups required. has been the industry standard',
+
+      fullText:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    },
+
+    link: {
+      seeLive: 'https://duanedave.github.io/Portfolio-Website/',
+      sources: 'https://github.com/DuaneDave/Portfolio-Website',
+    },
+    technologies: {
+      html: 'html',
+      bootstrap: 'bootstrap',
+      ror: 'ruby on rails',
+    },
+    imgSrc: 'asset/popup.png',
+  },
+
+  {
+    id: 3,
+
+    title: 'Proffesional Art Printing Data More',
+
+    description: {
+      summary:
+        'A daily selection of privately personalise reads; no accounts or sign-ups required. has been the industry standard',
+
+      fullText:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    },
+
+    link: {
+      seeLive: 'https://duanedave.github.io/Portfolio-Website/',
+      sources: 'https://github.com/DuaneDave/Portfolio-Website',
+    },
+    technologies: {
+      html: 'html',
+      bootstrap: 'bootstrap',
+      ror: 'ruby on rails',
+    },
+    imgSrc: 'asset/popup.png',
+  },
+
+  {
+    id: 4,
+
+    title: 'Data Dashboard Healthcare',
+
+    description: {
+      summary:
+        'A daily selection of privately personalise reads; no accounts or sign-ups required. has been the industry standard',
+
+      fullText:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    },
+
+    link: {
+      seeLive: 'https://duanedave.github.io/Portfolio-Website/',
+      sources: 'https://github.com/DuaneDave/Portfolio-Website',
+    },
+    technologies: {
+      html: 'html',
+      bootstrap: 'bootstrap',
+      ror: 'ruby on rails',
+    },
+    imgSrc: 'asset/popup.png',
+  },
+
+  {
+    id: 5,
+
+    title: 'Website Portfolio',
+
+    description: {
+      summary:
+        'A daily selection of privately personalise reads; no accounts or sign-ups required. has been the industry standard',
+
+      fullText:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    },
+
+    link: {
+      seeLive: 'https://duanedave.github.io/Portfolio-Website/',
+      sources: 'https://github.com/DuaneDave/Portfolio-Website',
+    },
+    technologies: {
+      html: 'html',
+      bootstrap: 'bootstrap',
+      ror: 'ruby on rails',
+    },
+    imgSrc: 'asset/popup.png',
+  },
+
+  {
+    id: 6,
+
+    title: 'Website Portfolio',
+
+    description: {
+      summary:
+        'A daily selection of privately personalise reads; no accounts or sign-ups required. has been the industry standard',
+
+      fullText:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+
+      small:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    },
+
+    link: {
+      seeLive: 'https://duanedave.github.io/Portfolio-Website/',
+      sources: 'https://github.com/DuaneDave/Portfolio-Website',
+    },
+    technologies: {
+      html: 'html',
+      bootstrap: 'bootstrap',
+      ror: 'ruby on rails',
+    },
+    imgSrc: 'asset/popup.png',
   },
 ];
 
-harmburger.addEventListener('click', () => {
-  navMenu.classList.toggle('slide');
-  harmburger.classList.toggle('slide');
-});
-
-navLink.forEach((n) => {
-  n.addEventListener('click', () => {
-    harmburger.classList.remove('slide');
-    navMenu.classList.remove('slide');
+function createCards() {
+  project.forEach((item) => {
+    panel.innerHTML += `
+    <div class="show">
+   <img src="asset/others.png" alt="image" />
+   <div class="card-content">
+     <h3>${item.title}</h3>
+     <p>${item.description.summary}</p>
+     <div class="btn-group flex">
+       <button class="btn">${item.technologies.html}</button>
+       <button class="btn">${item.technologies.bootstrap}</button>
+       <button class="btn">${item.technologies.ror}</button>
+     </div>
+   </div>
+   <button class="special modal-trigger">See Project</button>
+ </div>
+    `;
   });
-});
+}
+createCards();
+
+const modal = document.querySelector('.modal');
+const wrapper = document.getElementById('wrapper');
+const noScroll = document.querySelector('body');
+const modalTrigger = document.querySelectorAll('.modal-trigger');
 
 function createModal() {
-  const width = window.innerWidth;
-  modal.innerHTML = `
+  project.forEach((n, idx) => {
+    const width = innerWidth;
+    modal.innerHTML = `
   <div class="modal-head">
-    <h2>${width < 1080 ? projects[0].title[0] : projects[0].title[1]}</h2>
+    <h2>${project[idx].title}</h2>
     <div class="btn-group flex">
-      <button class="btn">${projects[0].technologies[0]}</button>
-      <button class="btn">${projects[0].technologies[1]}</button>
-      <button class="btn">${projects[0].technologies[2]}</button>
+      <button class="btn">${n.technologies.html}</button>
+      <button class="btn">${n.technologies.bootstrap}</button>
+      <button class="btn">${n.technologies.ror}</button>
     </div>
   </div>
 
   <div class="modal-content flex">
-  <img src="${projects[0].imgSrc[0]}" alt="${projects[0].imgSrc[1]}" />
+  <img src="${n.imgSrc}" alt="my project" />
   <div class="modal-details flex">
   <p class="modal-content">${
-  width < 1080 ? projects[0].description[0] : projects[0].description[1]
+  width < 768 ? n.description.small : n.description.fullText
 }</p>
   <div class="modal-actions flex">
   <button class="special">
   <a href="${
-  projects[0].link[0]
+  n.link.seeLive
 }" class="flex">See live <img src="asset/see.png" /></a>
   </button>
   <button class="special flex"><a href="${
-  projects[0].link[1]
+  n.link.sources
 }" class="flex">See source <img src="asset/linkgit.png" /></a>
   </button>
   </div>
@@ -73,6 +219,7 @@ function createModal() {
   </div>
   <div class="btn-close">X</div>
   `;
+  });
 }
 
 modalTrigger.forEach((n) => n.addEventListener('click', () => {
@@ -88,3 +235,16 @@ modalTrigger.forEach((n) => n.addEventListener('click', () => {
     noScroll.classList.remove('no-scroll');
   });
 }));
+
+harmburger.addEventListener('click', () => {
+  navMenu.classList.toggle('slide');
+  harmburger.classList.toggle('slide');
+});
+
+navLink.forEach((n) => {
+  n.addEventListener('click', () => {
+    harmburger.classList.remove('slide');
+    navMenu.classList.remove('slide');
+  });
+});
+
