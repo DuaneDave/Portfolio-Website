@@ -240,19 +240,19 @@ const txt = document.querySelector('textarea');
 form.addEventListener('submit', (e) => {
   const val = email.value;
 
-  const feedback = {};
+  const store = {};
 
   if (val !== val.toLowerCase()) {
     error.classList.add('incorrect');
     e.preventDefault();
   } else {
-    feedback.name = fName.value;
-    feedback.email = email.value;
-    feedback.txt = txt.value;
+    store.name = fName.value;
+    store.email = email.value;
+    store.txt = txt.value;
     error.classList.remove('incorrect');
     form.submit();
   }
-  localStorage.setItem('user', JSON.stringify(feedback));
+  localStorage.setItem('user', JSON.stringify(store));
 });
 
 function getLs() {
@@ -262,4 +262,4 @@ function getLs() {
   txt.value = see.txt;
 }
 
-getLs();
+getLs(); 
