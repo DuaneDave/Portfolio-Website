@@ -9,7 +9,7 @@ This is a portfolio site inspired by figma
 
 # <div align="center"><a href="https://github.com/DuaneDave/Portfolio-Website" text="bold">Live Demo</a></div>
 
-https://duanedave.github.io/Portfolio-Website/
+Check out the live version [here](https://duanedave.github.io/Portfolio-Website/)
 
 ![screenshot](asset/portfolio%20gif.gif)
 
