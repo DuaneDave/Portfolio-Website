@@ -5,10 +5,7 @@
 This is a portfolio site inspired by figma
 
 ![screenshot](asset/Portfolio%20-%20img2.png)
-![screenshot](asset/Portfolio%20-%20img3.png)
-![screenshot](asset/Portfolio%20-%20img4.png)
-![screenshot](asset/Portfolio%20-%20img5.png)
-![screenshot](asset/Portfolio%20-%20img1.png)
+
 
 # <div align="center"><a href="https://github.com/DuaneDave/Portfolio-Website" text="bold">Live Demo</a></div>
 
