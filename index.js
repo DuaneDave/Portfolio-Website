@@ -3,9 +3,6 @@ const harmburger = document.querySelector('.harmburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLink = document.querySelectorAll('.nav-link');
 const panel = document.querySelector('.showcase');
-const form = document.querySelector('form');
-const email = document.getElementById('email');
-const error = document.getElementById('error');
 
 const project = [
   {
@@ -234,32 +231,34 @@ navLink.forEach((n) => {
   });
 });
 
+const form = document.querySelector('form');
+const email = document.getElementById('email');
+const error = document.getElementById('error');
 const fName = document.querySelector('#name');
 const txt = document.querySelector('textarea');
 
 form.addEventListener('submit', (e) => {
-  const val = email.value;
-
-  const store = {};
-
-  if (val !== val.toLowerCase()) {
+  e.preventDefault();
+  if (email.value !== email.value.toLowerCase()) {
     error.classList.add('incorrect');
-    e.preventDefault();
   } else {
-    store.name = fName.value;
-    store.email = email.value;
-    store.txt = txt.value;
+    const data = {
+      name: fName.value,
+      email: email.value,
+      txt: txt.value,
+    };
+
     error.classList.remove('incorrect');
+    localStorage.setItem('user', JSON.stringify(data));
     form.submit();
   }
-  localStorage.setItem('user', JSON.stringify(store));
 });
 
-function getLs() {
-  const see = JSON.parse(localStorage.getItem('user'));
-  fName.value = see.name;
-  email.value = see.email;
-  txt.value = see.txt;
-}
-
-getLs(); 
+window.addEventListener('DOMContentLoaded', () => {
+  const entries = JSON.parse(localStorage.getItem('user'));
+  if (entries) {
+    fName.value = entries.name;
+    email.value = entries.email;
+    txt.value = entries.txt;
+  }
+});
