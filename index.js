@@ -156,7 +156,7 @@ function createCards() {
     panel.innerHTML += `
     <div class="show">
    <img src="asset/others.png" alt="image" />
-   <div class="card-content">
+   <div class="card-content hide-content">
      <h3>${item.title}</h3>
      <p>${item.description.summary}</p>
      <div class="btn-group flex">
