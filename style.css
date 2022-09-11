@@ -41,7 +41,7 @@ button {
   background: rgba(255, 255, 255, 0.24);
   font-size: 15px;
   font-weight: 500;
-  line-height: 20px;
+  color: var(--background-color);
   padding: 7px 12px;
 }
 
@@ -124,7 +124,7 @@ header {
 .line {
   background-color: #e5e5e5;
   height: 1px;
-  width: 16px;
+  width: 1rem;
   border: 1px solid #acb7c3;
   transition: 0.6s ease;
 }
@@ -382,7 +382,8 @@ header {
 .card-content {
   position: absolute;
   bottom: 3rem;
-  left: 1rem;
+  left: 0;
+  padding: 0;
 }
 
 .card .card-content {
@@ -402,6 +403,10 @@ header {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 24px;
+}
+
+.hide-content {
+  padding: 0 1em;
 }
 
 .showcase {
